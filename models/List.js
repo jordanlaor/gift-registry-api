@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const ListItemSchema = require("./ListItemSchema");
 const ListOwner = require("./ListOwner");
 
