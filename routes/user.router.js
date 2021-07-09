@@ -2,8 +2,6 @@ const express = require("express");
 const Oneall = require("oneall");
 require("dotenv").config();
 
-const List = require("../models/List");
-const ListItem = require("../models/ListItemSchema");
 const ListOwner = require("../models/ListOwner");
 
 const userRouter = new express.Router();
