@@ -2,7 +2,6 @@ const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
 const path = require("path");
-const testRouter = require("./routes/test.router");
 const ownerRouter = require("./routes/owner.router");
 const listsRouter = require("./routes/lists.router");
 const callbackRouter = require("./routes/callback.router");
@@ -21,7 +20,6 @@ require("./db/mongoose");
 app.use("/api/owner", ownerRouter);
 app.use("/api/lists", listsRouter);
 app.use("/api/user", userRouter);
-app.use("/api/test", testRouter);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
